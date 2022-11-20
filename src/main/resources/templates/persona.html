@@ -1,0 +1,37 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Persona</title>
+</head>
+<body>
+<h1>Persona datos</h1>
+<div class = "main_container">
+    <div class="row">
+        <div class="left">Persona Id:</div>
+        <div class="left" th:text="${persona.id}"></div>
+    </div>
+
+    <div class="row">
+        <div class="left">Primer Nombre: </div>
+        <div class="left" th:text="${persona.primerapellido}"></div>
+    </div>
+
+    <div class="row">
+        <div class="left">Segundo Nombre: </div>
+        <div class="left" th:text="${persona.segundonombre}"></div>
+    </div>
+
+    <div class="row">
+        <div class="left">Primer Apellido: </div>
+        <div class="left" th:text="${persona.primerapellido}"></div>
+    </div>
+
+    <div class="row">
+        <div class="left">Segundo Apellido: </div>
+        <div class="left" th:text="${persona.segundoapellido}"></div>
+    </div>
+
+
+
+</div>
+</body>
+</html>

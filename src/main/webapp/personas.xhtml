@@ -1,0 +1,72 @@
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Personas</title>
+    </h:head>
+    <h:body>
+        <!--        <p:outputLabel value="#{sinSeguridad.hola}"></p:outputLabel>-->
+        <h2>Personas</h2>
+        <hr />
+
+    <h:form>
+        <h:dataTable value = "${persona}"
+                     styleClass = "personaTable"
+                     headerClass = "personaTableHeader"
+                     rowClasses = "personaTableOddRow,personaTableEvenRow">
+
+            <h:column>
+                <f:facet name = "header">Primer Nombre</f:facet>
+                #{persona.primernombre}
+            </h:column>
+
+            <h:column>
+                <f:facet name = "header">Segundo nombre</f:facet>
+                #{persona.segundonombre}
+            </h:column>
+
+            <h:column>
+                <f:facet name = "header">Primer apellido</f:facet>
+                #{persona.primerapellido}
+            </h:column>
+
+            <h:column>
+                <f:facet name = "header">Segundo apellido</f:facet>
+                #{persona.segundoapellido}
+            </h:column>
+        </h:dataTable>
+        <h3>Agregar personas</h3>
+        <hr/>
+
+        <table>
+            <tr>
+                <td>primernombre :</td>
+                <td><h:inputText size = "10" value = "" /></td>
+            </tr>
+
+            <tr>
+                <td>segundonombre :</td>
+                <td><h:inputText size = "20" value = "" /></td>
+            </tr>
+
+            <tr>
+                <td>primerapellido :</td>
+                <td><h:inputText size = "5" value = "" /></td>
+            </tr>
+
+            <tr>
+                <td>segundoapellido :</td>
+                <td><h:inputText size = "5" value = "" /></td>
+            </tr>
+
+            <tr>
+                <td> </td>
+                <td><h:commandButton value = "Agregar Persona"
+                                     action = "" /></td>
+            </tr>
+        </table>
+    </h:form>
+
+</h:body>
+</f:view>

@@ -1,0 +1,24 @@
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Personas</title>
+    </h:head>
+    <h:body>
+        <!--        <p:outputLabel value="#{sinSeguridad.hola}"></p:outputLabel>-->
+        <h2>Personas</h2>
+        <hr />
+
+        <h:form id="persona-form">
+            <h:outputLabel value = "Primer Nombre"/>
+            <h:inputText value = "${persona.primernombre}" />
+            <h:outputLabel value = "Segundo Nombre"/>
+            <h:inputText value = "${persona.segundonombre}" />
+            <h:outputLabel value = "Primer Apellido"/>
+            <h:inputText value = "${persona.primerapellido}"/>
+            <h:outputLabel value = "Segundo Apellido"/>
+            <h:inputText value = "${persona.segundoapellido}"/>
+        </h:form>
+    </h:body>
+</f:view>
